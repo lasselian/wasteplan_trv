@@ -3,14 +3,14 @@
     "step": {
       "user": {
         "data": {
-          "location_name": "Address"
+          "address": "Address"
         },
         "description": "Fill out your address"
       },
       "location": {
         "data": {
           "calendar_name": "Calendar name",
-          "location_id": "Location ID"
+          "location": "Location"
         },
         "description": "Pick your location"
       }
@@ -18,7 +18,10 @@
     "error": {
       "no_location": "Unable to find location based on your address",
       "connection": "Unable to connect to the server.",
-      "unknown": "[%key:common::config_flow::error::unknown%]"
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This location is already configured."
     }
   }
 }

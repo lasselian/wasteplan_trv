@@ -3,22 +3,25 @@
     "step": {
       "user": {
         "data": {
-          "location_name": "Adresse"
+          "address": "Adresse"
         },
         "description": "Skriv inn din adresse"
       },
       "location": {
         "data": {
           "calendar_name": "Kalendernavn",
-          "location_id": "Lokasjons ID"
+          "location": "Lokasjon"
         },
         "description": "Velg din lokasjon"
       }
     },
     "error": {
       "no_location": "Fant ingen lokasjoner fra denne adressen.",
-      "connection": "Kunne ikke kontakte til server.",
-      "unknown": "[%key:common::config_flow::error::unknown%]"
+      "connection": "Kunne ikke koble til serveren.",
+      "unknown": "Uventet feil"
+    },
+    "abort": {
+      "already_configured": "Denne lokasjonen er allerede lagt til."
     }
   }
 }
